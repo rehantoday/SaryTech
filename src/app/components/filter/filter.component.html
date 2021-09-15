@@ -1,0 +1,32 @@
+<div class="filter-section">
+    <div class="text-center pt-2">
+        <h2>FILTERS</h2>
+    </div>
+    <hr class="bg-disabled border-2 border-top border-disabled">
+    <form (ngSubmit)="onSubmit(theForm)" #theForm="ngForm" class="p-4">
+        <div class="form-group">
+            <div class="mb-3">
+                <input type="email" class="form-control" ngModel name="email" placeholder="email (name@example.com)">
+            </div>
+            <div class="mb-3">
+                <input type="tel" class="form-control" ngModel name="telephone"
+                    placeholder="telephone number (+1 555 555-1234())">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" ngModel name="name" placeholder="name">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" ngModel name="company" placeholder="company">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" ngModel name="country" placeholder="country">
+            </div>
+            <div class="mb-3">
+                <input type="date" class="form-control" ngModel name="date" placeholder="date">
+            </div>
+            <div class="mb-3 d-grid">
+                <button (click)="(onSubmit)" class="btn btn-primary mb-3">Filter</button>
+            </div>
+        </div>
+    </form>
+</div>
